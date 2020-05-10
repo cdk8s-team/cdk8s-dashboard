@@ -1,12 +1,12 @@
 {
-  "name": "jsii-library-template",
-  "version": "1.1.0",
-  "description": "Template for jsii libraries",
+  "name": "cdk8s-dashboard",
+  "version": "0.1.0",
+  "description": "Kubernetes dashboard cdk8s construct library",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eladb/jsii-library-template.git"
+    "url": "https://github.com/eladb/cdk8s-dashboard.git"
   },
   "author": "Elad Ben-Israel <benisrae@amazon.com>",
   "license": "Apache-2.0",
@@ -32,19 +32,19 @@
     "versionFormat": "full",
     "targets": {
       "java": {
-        "package": "com.github.eladb.jsiilibrarytemplate",
+        "package": "com.github.eladb.cdk8s.dashboard",
         "maven": {
           "groupId": "com.github.eladb",
-          "artifactId": "jsii-library-template"
+          "artifactId": "cdk8s-dashboard"
         }
       },
       "python": {
-        "distName": "jsii-library-template",
-        "module": "jsii_library_template"
+        "distName": "cdk8s-dashboard",
+        "module": "cdk8s_dashboard"
       },
       "dotnet": {
-        "namespace": "Eladb.JsiiLibraryTemplate",
-        "packageId": "Elad.JsiiLibraryTemplate"
+        "namespace": "Eladb.Cdk8s.Dashboard",
+        "packageId": "Eladb.Cdk8s.Dashboard"
       }
     }
   }
