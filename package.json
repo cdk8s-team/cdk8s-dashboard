@@ -24,7 +24,9 @@
     "jsii-diff": "^1.5.0",
     "jsii-pacmak": "^1.5.0",
     "jsii-release": "^0.1.5",
-    "standard-version": "^8.0.0"
+    "standard-version": "^8.0.0",
+    "cdk8s": "0.20.0",
+    "constructs": "2.0.1"
   },
   "stability": "experimental",
   "jsii": {
@@ -47,5 +49,9 @@
         "packageId": "Eladb.Cdk8s.Dashboard"
       }
     }
+  },
+  "peerDependencies": {
+    "cdk8s": "^0.20.0",
+    "constructs": "^2.0.1"
   }
 }
