@@ -25,8 +25,8 @@
   },
   "devDependencies": {
     "cdk8s": "0.20.0",
-    "constructs": "3.0.3",
-    "projen": "^0.1.5",
+    "constructs": "2.0.1",
+    "projen": "^0.1.6",
     "jsii": "^1.5.0",
     "jsii-diff": "^1.5.0",
     "jsii-pacmak": "^1.5.0",
@@ -42,7 +42,7 @@
   },
   "peerDependencies": {
     "cdk8s": "^0.20.0",
-    "constructs": "^3.0.3"
+    "constructs": "^2.0.1"
   },
   "dependencies": {},
   "bundledDependencies": [],
@@ -51,6 +51,22 @@
   "stability": "experimental",
   "jsii": {
     "outdir": "dist",
-    "targets": {}
+    "targets": {
+      "java": {
+        "package": "com.github.eladb.cdk8s.dashboard",
+        "maven": {
+          "groupId": "com.github.eladb",
+          "artifactId": "cdk8s-dashboard"
+        }
+      },
+      "python": {
+        "distName": "cdk8s-dashboard",
+        "module": "cdk8s_dashboard"
+      },
+      "dotnet": {
+        "namespace": "Eladb.Cdk8s.Dashboard",
+        "packageId": "Eladb.Cdk8s.Dashboard"
+      }
+    }
   }
 }

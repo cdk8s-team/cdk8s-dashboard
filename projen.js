@@ -10,28 +10,21 @@ const project = new JsiiProject({
   stability: 'experimental',
   peerDependencies: {
     cdk8s: Semver.caret('0.20.0'),
-    constructs: Semver.caret('3.0.3'),
+    constructs: Semver.caret('2.0.1'),
+  },
+  java: {
+    javaPackage: 'com.github.eladb.cdk8s.dashboard',
+    mavenGroupId: 'com.github.eladb',
+    mavenArtifactId: 'cdk8s-dashboard'
+  },
+  python: {
+    distName: 'cdk8s-dashboard',
+    module: 'cdk8s_dashboard'
+  },
+  dotnet: {
+    dotNetNamespace: 'Eladb.Cdk8s.Dashboard',
+    packageId: 'Eladb.Cdk8s.Dashboard'
   }
 });
 
 project.synth();
-
-/*
-    "targets": {
-      "java": {
-        "package": "com.github.eladb.cdk8s.dashboard",
-        "maven": {
-          "groupId": "com.github.eladb",
-          "artifactId": "cdk8s-dashboard"
-        }
-      },
-      "python": {
-        "distName": "cdk8s-dashboard",
-        "module": "cdk8s_dashboard"
-      },
-      "dotnet": {
-        "namespace": "Eladb.Cdk8s.Dashboard",
-        "packageId": "Eladb.Cdk8s.Dashboard"
-      }
-    }
-*/
