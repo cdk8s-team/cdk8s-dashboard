@@ -2250,11 +2250,12 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.1.6.tgz#3863e184da17dc97fe9a25c3220fe986849bec1d"
-  integrity sha512-/gyN0ijrc2SU7DIq6Oix6Spq0Wa0pNYPEG/zr/vgGvpv8G1OsVhP+sPhO7rWMe/qOwdnxyNnA2wkfNmrVi0xkw==
+projen@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.1.10.tgz#ec41daa538dc7aa3a6fee5b71cd896760e3dee71"
+  integrity sha512-l/4y9Lt8RLkmhMh8jm5gQNvErK+s/vR1U0idGn/CfJLh4GKKpmpz8zOt+dSQpCcDFzKHVijRI1n6cBuuk/NubA==
   dependencies:
+    constructs "2.0.1"
     yaml "^1.9.2"
 
 punycode@^2.1.0:
@@ -2937,7 +2938,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@~3.8.3:
+typescript@^3.8.3, typescript@~3.8.3:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
   integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
