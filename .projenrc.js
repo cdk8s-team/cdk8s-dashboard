@@ -1,30 +1,36 @@
-const { JsiiProject, Semver } = require('projen');
+const { JsiiProject } = require('projen');
 
 const project = new JsiiProject({
   name: 'cdk8s-dashboard',
-  jsiiVersion: Semver.caret('1.5.0'),
   description: 'Kubernetes dashboard construct library for cdk8s',
-  repository: 'https://github.com/eladb/cdk8s-dashboard.git',
+
+  repository: 'https://github.com/cdk8s-team/cdk8s-dashboard.git',
+  defaultReleaseBranch: 'master',
+  stability: 'experimental',
+
   authorName: 'Elad Ben-Israel',
   authorEmail: 'benisrae@amazon.com',
-  stability: 'experimental',
-  peerDependencies: {
-    cdk8s: Semver.caret('0.20.0'),
-    constructs: Semver.caret('2.0.1'),
-  },
-  java: {
+
+  peerDependencies: [
+    'cdk8s@^0.20.0',
+    'constructs@^2.0.1',
+  ],
+
+  publishToMaven: {
     javaPackage: 'com.github.eladb.cdk8s.dashboard',
     mavenGroupId: 'com.github.eladb',
-    mavenArtifactId: 'cdk8s-dashboard'
+    mavenArtifactId: 'cdk8s-dashboard',
   },
-  python: {
+
+  publishToPypi: {
     distName: 'cdk8s-dashboard',
-    module: 'cdk8s_dashboard'
+    module: 'cdk8s_dashboard',
   },
-  dotnet: {
+
+  publishToNuget: {
     dotNetNamespace: 'Eladb.Cdk8s.Dashboard',
-    packageId: 'Eladb.Cdk8s.Dashboard'
-  }
+    packageId: 'Eladb.Cdk8s.Dashboard',
+  },
 });
 
 project.synth();
