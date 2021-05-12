@@ -1,9 +1,9 @@
 /**
- * Hello class.
+ * @experimental
  */
 export declare class Hello {
     /**
-     * Hey there!
+     * @experimental
      */
-    world(): string;
+    sayHello(): string;
 }
